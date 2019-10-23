@@ -13,9 +13,9 @@ The repository includes:
 * [demo.ipynb](): This is the easiest way to start and it shows an example of using a model pre-trained on crack dataset to segment your own images. It includes code to run object detection and instance segmentation on arbitrary images.
 * [(model.py, utils.py, config.py)](): These files contain the main Mask RCNN implementation files.
 
-~~* [inspect_data.ipynb](): This notebook visualizes the different pre-processing steps to prepare the training data.~~
+* ~~[inspect_data.ipynb](): This notebook visualizes the different pre-processing steps to prepare the training data~~
 
-~~* [inspect_model.ipynb](): This notebook goes in depth into the steps performed to detect and segment objects. It provides visualizations of every step of the pipeline. ~~
+* ~~[inspect_model.ipynb](): This notebook goes in depth into the steps performed to detect and segment objects. It provides visualizations of every step of the pipeline~~
 
 # Contributing
 Contributions to this repository are welcome. Examples of things you can contribute:
