@@ -1,4 +1,4 @@
-# Mask_RCNN for Civil Engineering applications for object detection and segmentation
+# Mask_RCNN in Civil Engineering applications for object detection and segmentation
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow based on the [matterpot](https://github.com/matterport/Mask_RCNN) repository for object detection and instance segmentation. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone. This is a project of [Smart Infrastructure & Technology Lab](http://sitl.cau.ac.kr/) for concrete crack detection and segmentation under the supervision of Prof. Jongwoong Park.
 
 The repository includes:
@@ -30,10 +30,10 @@ Python 3.4, TensorFlow 1.3, Keras 2.0.8 and other common packages listed in > re
 
 2. Install dependencies
 
-`    pip3 install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 3. Run setup from the repository root directory
 
-`    python3 setup.py install`
+`python3 setup.py install`
 
 4. Use pre-trained Crack weights (mask_rcnn_crack_0081.h5).
