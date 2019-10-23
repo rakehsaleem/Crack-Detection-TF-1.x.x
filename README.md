@@ -10,8 +10,8 @@ The repository includes:
 * Example of training on your own dataset, with emphasize on how to build and adapt codes to dataset with multiple classes.
 
 # Getting Started
-* [demo.ipynb](): This is the easiest way to start and it shows an example of using a model pre-trained on crack dataset to segment your own images. It includes code to run object detection and instance segmentation on arbitrary images.
-* [(model.py, utils.py, config.py)](): These files contain the main Mask RCNN implementation files.
+* [demo.ipynb](https://github.com/rakehsaleem/Custom_Mask_RCNN/blob/master/crack/demo.ipynb): This is the easiest way to start and it shows an example of using a model pre-trained on crack dataset to segment your own images. It includes code to run object detection and instance segmentation on arbitrary images.
+* [(model.py, utils.py, config.py)](https://github.com/rakehsaleem/Custom_Mask_RCNN/tree/master/mrcnn): These files contain the main Mask RCNN implementation files.
 
 * ~~[inspect_data.ipynb](): This notebook visualizes the different pre-processing steps to prepare the training data~~
 
