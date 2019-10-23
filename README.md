@@ -38,8 +38,8 @@ Python 3.4, TensorFlow 1.3, Keras 2.0.8 and other common packages listed in > re
 
 3. Run setup from the repository root directory
 
-```bash
-python3 setup.py install
-```
+   ```bash
+   python3 setup.py install
+   ```
 
 4. Use pre-trained Crack weights (mask_rcnn_crack_0081.h5).
