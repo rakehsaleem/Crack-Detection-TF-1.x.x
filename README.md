@@ -25,7 +25,7 @@ Contributions to this repository are welcome. Examples of things you can contrib
 * Visualization and examples
 
 # Requirements
-Python 3.4, TensorFlow 1.3, Keras 2.0.8 and other common packages listed in > requirements.txt.
+Python 3.6, TensorFlow >=1.14.x, Keras 2.2.4 and other common packages listed in > requirements.txt.
 
 # Installation
 1. Clone this repository
