@@ -1,5 +1,5 @@
 # Mask R-CNN for crack detection in civil infrastructure
-This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow based on the [matterpot](https://github.com/matterport/Mask_RCNN) repository for object detection and instance segmentation. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone. This is a project of [Smart Infrastructure & Technology Lab](http://sitl.cau.ac.kr/) for concrete crack detection and segmentation under the supervision of Prof. Jongwoong Park.
+This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow based on the [matterpot](https://github.com/matterport/Mask_RCNN) repository for crack damage detection and segmentation. The model generates bounding boxes and segmentation masks for each instance of a crack in the image.
 
 The repository includes:
 * Source code of Mask R-CNN built on FPN and ResNet101
@@ -10,8 +10,10 @@ The repository includes:
 * Example of training on your own dataset, with emphasize on how to build and adapt codes to dataset with multiple classes.
 
 # Getting Started
-* [demo.ipynb](https://github.com/rakehsaleem/Custom_Mask_RCNN/blob/master/crack/demo.ipynb): This is the easiest way to start and it shows an example of using a model pre-trained on crack dataset to segment your own images. It includes code to run object detection and instance segmentation on arbitrary images.
-* [(model.py, utils.py, config.py)](https://github.com/rakehsaleem/Custom_Mask_RCNN/tree/master/mrcnn): These files contain the main Mask RCNN implementation files.
+The pre-trained weights from MS COCO and ImageNet are provided to fine-tune the new dataset and for starters, begin with this blog [post](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46) about the balloon color splash sample. It covers the process starting from annotating images to training to using the results in a sample application.
+
+* [demo.ipynb](https://github.com/rakehsaleem/Custom_Mask_RCNN/blob/master/crack/demo.ipynb): This is the easiest way to start and it shows an example of using a model pre-trained on crack dataset to segment your own images. It includes code to run crack detection and instance segmentation on arbitrary images.
+* [(model.py, utils.py, config.py)](https://github.com/rakehsaleem/Custom_Mask_RCNN/tree/master/mrcnn): These files contain the main Mask RCNN implementation.
 
 * ~~[inspect_data.ipynb](): This notebook visualizes the different pre-processing steps to prepare the training data~~
 
