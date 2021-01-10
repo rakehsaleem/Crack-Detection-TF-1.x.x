@@ -40,5 +40,4 @@ Anaconda & Python >=3.6, TensorFlow >=1.14.x, Keras 2.2.4, CUDA 9.0, cudnn 7.5 a
    ```bash
    python3 setup.py install
    ```
-
 4. Use pre-trained Crack weights (mask_rcnn_crack_0081.h5).
