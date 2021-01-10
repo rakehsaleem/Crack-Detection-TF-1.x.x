@@ -17,6 +17,27 @@ The pre-trained weights from MS COCO and ImageNet are provided to fine-tune the 
 
 * [crack.py](): This file contains the main configuration and attricbutes for training crack instances.
 
+# Training on your own dataset
+In summary, to train the model on your own dataset you'll need to extend two classes:
+
+```CrackConfig``` This class contains the default configuration. Subclass it and modify the attributes you need to change.
+
+```CrackDataset``` This class provides a consistent way to work with any dataset. It allows you to use new datasets for training without having to change the code of the model. It also supports loading multiple datasets at the same time, which is useful if the objects you want to detect are not all available in one dataset.
+To start training on your dataset, you can run following commands directly from the coomand line as such:
+
+1. Train a new model starting from pre-trained COCO weights
+```bash
+python crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=coco  
+```
+2. Train a new model starting from pre-trained ImageNet weights
+```bash
+python crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=imagenet
+```
+3. Continue training the last model you trained. This will find the last trained weights in the model directory.
+```bash
+python crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=last
+```
+
 # Contributing
 Contributions to this repository are welcome. Examples of things you can contribute:
 
