@@ -37,7 +37,7 @@ import skimage.draw
 from imgaug import augmenters as iaa
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("D:\keras\Matterpot_Mask_RCNN_Balloon")
+ROOT_DIR = os.path.abspath("../..")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
