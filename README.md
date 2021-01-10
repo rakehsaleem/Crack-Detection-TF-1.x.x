@@ -62,5 +62,5 @@ Anaconda & Python >=3.6, TensorFlow >=1.14.x, Keras 2.2.4, CUDA 9.0, cudnn 7.5 a
    ```bash
    python3 setup.py install
    ```
-4. You can choose to download ```mask_rcnn_crack.h5``` from the [releases page]() and save it in the root directory of the repo.
+4. You can choose to download ```mask_rcnn_crack.h5``` from the [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases) and save it in the root directory of the repo.
 5. The code will automatically download pre-trained COCO weights, but in case it doesn't work, download from releases page.
