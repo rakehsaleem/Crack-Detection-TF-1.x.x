@@ -15,7 +15,7 @@ The pre-trained weights from MS COCO and ImageNet are provided to fine-tune the 
 * [demo.ipynb](https://github.com/rakehsaleem/Custom_Mask_RCNN/blob/master/crack/demo.ipynb): This is the easiest way to start and it shows an example of using a model pre-trained on crack dataset to segment your own images. It includes code to run crack detection and instance segmentation on arbitrary images.
 * [(model.py, utils.py, config.py)](https://github.com/rakehsaleem/Custom_Mask_RCNN/tree/master/mrcnn): These files contain the overall Mask RCNN implementation.
 
-* [crack.py](): This file contains the main configuration and attricbutes for training crack instances.
+* [crack.py](https://github.com/rakehsaleem/Custom_Mask_RCNN/blob/master/crack/crack.py): This file contains the main configuration and attricbutes for training crack instances.
 
 # Training on your own dataset
 In summary, to train the model on your own dataset you'll need to extend two classes:
