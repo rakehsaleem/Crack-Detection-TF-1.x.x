@@ -65,13 +65,13 @@ class CrackConfig(Config):
 
     # We use a GPU with 12GB memory, which can fit two images.
     # Adjust down if you use a smaller GPU.
-    IMAGES_PER_GPU = 1
+    IMAGES_PER_GPU = 4
 
     # Number of classes (including background)
     NUM_CLASSES = 1 + 1  # Background + crack
 
     # Number of training steps per epoch
-    STEPS_PER_EPOCH = 200
+    STEPS_PER_EPOCH = 800
 
     # Skip detections with < 90% confidence
     DETECTION_MIN_CONFIDENCE = 0.5
@@ -219,18 +219,18 @@ def train(model):
     print("Training network heads")
     model.train(dataset_train, dataset_val,
                 learning_rate=config.LEARNING_RATE,
-                epochs=30,
+                epochs=300,
                 augmentation=augmentation,
                 layers='heads')
                 #custom_callbacks=[mean_average_precision_callback])
     
   #  model.train(dataset_train, dataset_val, 
   #              learning_rate=config.LEARNING_RATE / 10, 
-  #              epochs=20, 
+  #              epochs=100, 
   #              layers='heads')
   #  model.train(dataset_train, dataset_val, 
   #              learning_rate=config.LEARNING_RATE,
-  #              epochs=30, 
+  #              epochs=200, 
   #              layers='all')
     
 def color_splash(image, mask):
