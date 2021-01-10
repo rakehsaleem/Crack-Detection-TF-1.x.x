@@ -23,20 +23,21 @@ In summary, to train the model on your own dataset you'll need to extend two cla
 ```CrackConfig``` This class contains the default configuration. Subclass it and modify the attributes you need to change.
 
 ```CrackDataset``` This class provides a consistent way to work with any dataset. It allows you to use new datasets for training without having to change the code of the model. It also supports loading multiple datasets at the same time, which is useful if the objects you want to detect are not all available in one dataset.
-To start training on your dataset, you can run following commands directly from the coomand line as such:
+To start training on your dataset, you can run following commands directly from the command line as such:
 
 1. Train a new model starting from pre-trained COCO weights
 ```bash
-python crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=coco  
+python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=coco  
 ```
 2. Train a new model starting from pre-trained ImageNet weights
 ```bash
-python crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=imagenet
+python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=imagenet
 ```
 3. Continue training the last model you trained. This will find the last trained weights in the model directory.
 ```bash
-python crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=last
+python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=last
 ```
+The code in the ```crack.py``` is set to train for 240K steps (300 epochs of 800) with a batch size of 4. Update the schedule to fit your system needs. 
 
 # Contributing
 Contributions to this repository are welcome. Examples of things you can contribute:
@@ -61,4 +62,5 @@ Anaconda & Python >=3.6, TensorFlow >=1.14.x, Keras 2.2.4, CUDA 9.0, cudnn 7.5 a
    ```bash
    python3 setup.py install
    ```
-4. Use pre-trained Crack weights (mask_rcnn_crack_0081.h5).
+4. You can choose to download ```mask_rcnn_crack.h5``` from the [releases page]() and save it in the root directory of the repo.
+5. The code will automatically download pre-trained COCO weights, but in case it doesn't work, download from here.
