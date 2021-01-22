@@ -47,7 +47,7 @@ Contributions to this repository are welcome. Examples of things you can contrib
 * Visualization and examples
 
 # System configurations
-Anaconda & Python >=3.6, TensorFlow >=1.14.x, Keras 2.2.4, CUDA 9.0, cudnn 7.5 and other common packages listed in ```requirements.txt```.
+Anaconda==4.6.x, Python==3.6.7, TensorFlow==1.14.0, Keras==2.2.4 and other common packages listed in ```requirements.txt```.
 
 # Installation
 1. Clone this repository
