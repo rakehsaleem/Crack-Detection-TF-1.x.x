@@ -25,17 +25,17 @@ In summary, to train the model on your own dataset you'll need to extend two cla
 To start training on your dataset, you can run following commands directly from the command line as such:
 
 1. Train a new model starting from pre-trained COCO weights
-```bash
-python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=coco  
-```
+   ```bash
+   python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=coco  
+   ```
 2. Train a new model starting from pre-trained ImageNet weights
-```bash
-python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=imagenet
-```
+   ```bash
+   python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=imagenet
+   ```
 3. Continue training the last model you trained. This will find the last trained weights in the model directory.
-```bash
-python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=last
-```
+   ```bash
+   python3 crack.py train --dataset=/home/.../mask_rcnn/data/crack/ --weights=last
+   ```
 The code in the ```crack.py``` is set to train for 240K steps (300 epochs of 800) with a batch size of 4. Update the schedule to fit your system needs. 
 
 # Contributing
