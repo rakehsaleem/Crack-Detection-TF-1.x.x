@@ -72,12 +72,13 @@ With Tensorflow2.0 releases, earlier versions can not be configured via pip, and
    ```bash
    python3 setup.py install
    ```
+   File hierarchy as follow to avoid any confusion among two setup files.
    ```bash
-   File hierarchy as follow to avoid any confusion.
    -->Project->
-             |-> Mask R-CNN ->
-             |              |-> this entire repo. 
-             |-> Keras
+             |-> Mask R-CNN->
+             |             |-> setup.py file. 
+             |-> Keras ->
+                       |-> setup.py file
    ```   
 7. You can choose to download ```mask_rcnn_crack.h5``` from the [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases) and save it in the root directory.
 8. The code will automatically download pre-trained COCO weights, but in case it doesn't work, download from [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases).
