@@ -47,19 +47,37 @@ Contributions to this repository are welcome. Examples of things you can contrib
 
 # System configurations
 Anaconda==4.6.8, Python==3.6.7, TensorFlow==1.14.0, Keras==2.2.4 and other common packages listed in ```requirements.txt```.
+With Tensorflow2.0 releases, earlier versions can not be configured via pip, and therefore, you can simply download the required version from [here](https://pypi.org/project/tensorflow/#history) depending on your OS.
 
 # Installation
 1. Clone this repository
-2. Install dependencies
+2. Create virtual environment for your specicfc project using
+   ```bash
+   conda create -n [env. name] python=3.x anaconda
+   ```
 
+3. Install dependencies
    ```bash
    pip3 install -r requirements.txt
    ```
-
-3. Run setup from the repository root directory
-
+4. Install tensorflow by running the folowing command (ex. ```tensorflow-1.x.x-cpxx-cpxxm-OS.whl```).
+   ```bash
+   pip install [whl file path]
+   ```
+5. Install keras by downloading the keras library from releases page into the project directory and build the file from that directory.
+   ```bash
+   python setup.py install
+   ```
+6. Run setup file from the mask r-cnn root directory
    ```bash
    python3 setup.py install
    ```
-4. You can choose to download ```mask_rcnn_crack.h5``` from the [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases) and save it in the root directory.
-5. The code will automatically download pre-trained COCO weights, but in case it doesn't work, download from [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases).
+   ```bash
+   File hierarchy as follow to avoid any confusion.
+   -->Project->
+             |-> Mask R-CNN ->
+             |              |-> this entire repo. 
+             |-> Keras
+   ```   
+7. You can choose to download ```mask_rcnn_crack.h5``` from the [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases) and save it in the root directory.
+8. The code will automatically download pre-trained COCO weights, but in case it doesn't work, download from [releases page](https://github.com/rakehsaleem/Custom_Mask_RCNN/releases).
