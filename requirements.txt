@@ -16,4 +16,4 @@ scikit-learn
 m2w64-toolchain 
 git
 graphviz
-keras==2.2.4
+keras==2.0.8
