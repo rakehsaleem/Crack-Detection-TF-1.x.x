@@ -46,7 +46,9 @@ Contributions to this repository are welcome. Examples of things you can contrib
 * Visualization and examples
 
 # System configurations
-Anaconda==4.6.8, Python==3.6.7, TensorFlow==1.14.0, Keras==2.2.4 and other common packages listed in ```requirements.txt```.
+Anaconda==4.6.8, Python==3.6.7, TensorFlow==1.14.0, Keras==2.0.8 and other common packages listed in ```requirements.txt```.
+* Note keras and tensorflow versions are based of **_CPU_** requirments!
+
 With Tensorflow2.0 releases, earlier versions can not be configured via pip, and therefore, you can simply download the required version from [here](https://pypi.org/project/tensorflow/#history) depending on your OS.
 
 # Installation
