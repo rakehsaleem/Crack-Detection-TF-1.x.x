@@ -1,5 +1,5 @@
 # Mask R-CNN for crack detection in civil infrastructure
-This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras 2.2.x, and TensorFlow 1.x.x based on the [matterpot](https://github.com/matterport/Mask_RCNN) repository for crack damage detection and segmentation. The model generates bounding boxes and segmentation masks for each instance of a crack in the image.
+This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras 2.0.x, and TensorFlow 1.14.x based on the [matterpot](https://github.com/matterport/Mask_RCNN) repository for crack damage detection and segmentation. The model generates bounding boxes and segmentation masks for each instance of a crack in the image.
 
 The repository includes:
 * Source code of Mask R-CNN built on FPN and ResNet101
