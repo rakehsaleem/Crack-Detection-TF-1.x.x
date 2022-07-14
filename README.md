@@ -55,6 +55,7 @@ With Tensorflow2.0 releases, earlier versions can not be configured via pip, and
 1. Clone this repository
 2. Create virtual environment for your specicfc project using
    ```bash
+   conda update -n base -c defaults conda
    conda create -n [env. name] python=3.x anaconda
    ```
 
